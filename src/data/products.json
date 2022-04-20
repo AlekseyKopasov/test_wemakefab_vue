@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Converse Kids 70",
+    "price": 49.99,
+    "old-price": 0,
+    "currency": "USD",
+    "sale": "0",
+    "img": {
+      "src": "assets/images/sneakers-1",
+      "width": 335,
+      "height": 400
+    }
+  },
+  {
+    "id": 2,
+    "title": "Converse Kids 70",
+    "price": 49.99,
+    "old-price": 0,
+    "currency": "USD",
+    "sale": "0",
+    "img": {
+      "src": "assets/images/sneakers-2",
+      "width": 335,
+      "height": 400
+    }
+  },
+  {
+    "id": 3,
+    "title": "Converse Chuck 70 Renew High Top ",
+    "price": 50.99,
+    "old-price": 84.99,
+    "currency": "USD",
+    "sale": "0",
+    "img": {
+      "src": "assets/images/sneakers-3",
+      "width": 335,
+      "height": 400
+    }
+  },
+  {
+    "id": 4,
+    "title": "Converse Pro Chuck 80",
+    "price": 64.99,
+    "old-price": 99.99,
+    "currency": "USD",
+    "sale": "30",
+    "img": {
+      "src": "assets/images/sneakers-4",
+      "width": 335,
+      "height": 400
+    }
+  },
+  {
+    "id": 5,
+    "title": "Converse Winter Chuck 70",
+    "price": 79.99,
+    "old-price": 99.99,
+    "currency": "USD",
+    "sale": "20",
+    "img": {
+      "src": "assets/images/sneakers-5",
+      "width": 335,
+      "height": 400
+    }
+  },
+  {
+    "id": 6,
+    "title": "Converse Winter Chuck 70 Full Black",
+    "price": 129.99,
+    "old-price": 0,
+    "currency": "USD",
+    "sale": "0",
+    "img": {
+      "src": "assets/images/sneakers-6",
+      "width": 335,
+      "height": 400
+    }
+  },
+  {
+    "id": 7,
+    "title": "Converse Winter Chuck 70 Black/White",
+    "price": 99.99,
+    "old-price": 0,
+    "currency": "USD",
+    "sale": "0",
+    "img": {
+      "src": "assets/images/sneakers-7",
+      "width": 335,
+      "height": 400
+    }
+  }
+]

@@ -2,22 +2,3 @@ body {
   font-family: $ff--inter;
   font-size: $font-size-html;
 }
-
-a {
-  text-decoration: none;
-  color: $color-nero;
-  transition: color $trans-400;
-
-  &:hover,
-  &:focus {
-    color: $color-safety-orange;
-  }
-
-  &:active {
-    color: $color-nero;
-  }
-
-  .active {
-    color: $color-safety-orange;
-  }
-}

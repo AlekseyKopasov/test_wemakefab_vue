@@ -8,9 +8,7 @@
 </template>
 
 <script>
-export default {
-  name: 'Filters',
-}
+export default {};
 </script>
 
 <style scoped>

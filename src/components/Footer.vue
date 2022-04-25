@@ -1,20 +1,45 @@
 <template>
-  <footer>
-    <b-row>
-      <b-col>1 of 3</b-col>
-      <b-col>2 of 3</b-col>
-      <b-col>3 of 3</b-col>
-      <b-col>4 of 4</b-col>
-    </b-row>
+  <footer class="footer">
+    <b-container>
+      <b-row>
+        <b-col>
+          <router-link to="/">
+            <Logo :mod="white" />
+          </router-link>
+        </b-col>
+        <b-col
+          class="d-flex justify-content-end"
+          cols="8">
+          <router-link class="link link--white active" to="/" >Copyright</router-link>
+          <router-link class="link link--white active" to="/" >Contacts</router-link>
+        </b-col>
+      </b-row>
+    </b-container>
   </footer>
 </template>
 
 <script>
+import Logo from '@/components/Logo.vue';
+
 export default {
-  name: 'Footer',
-}
+  components: { Logo },
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../../src/assets/styles/global/variables.scss';
 
+.footer {
+  margin-top: auto;
+  padding: 30px 0;
+  background-color: $color-nero;
+
+  .link {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
 </style>

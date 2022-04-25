@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <b-row>
       <b-col>
         <router-link to="/">
@@ -7,12 +7,17 @@
         </router-link>
       </b-col>
       <b-col>
-        <router-link to="/" class="active">Catalog</router-link>
+        <router-link class="link active" to="/" >Catalog</router-link>
       </b-col>
-      <b-col></b-col>
-      <b-col>
-        <router-link to="/profile">Profile</router-link>
-        <button>Basket(3)</button>
+      <b-col
+        class="d-flex justify-content-end"
+        cols="4">
+        <router-link class="link" to="/profile">Profile</router-link>
+        <b-button
+          class="link"
+          variant="link">Basket
+            <span>({{ basketCount }})</span>
+        </b-button>
       </b-col>
     </b-row>
   </header>
@@ -23,9 +28,16 @@ import Logo from '@/components/Logo.vue';
 
 export default {
   components: { Logo },
+  data: () => ({
+    basketCount: 3,
+  }),
 };
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.header {
+  margin-bottom: 60px;
+  padding: 30px 0;
+  border-bottom: 1px solid #BDBDBD; // TODO dev only
+}
 </style>

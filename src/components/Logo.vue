@@ -6,5 +6,53 @@
   </span>
 </template>
 
+<script>
+export default {
+  props: ['mod'],
+};
+</script>
+
 <style lang="scss" scoped>
+@import '../../src/assets/styles/global/variables.scss';
+
+.logo {
+  padding: 5px 0;
+  border: 0;
+  display: inline-flex;
+  text-decoration: none;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 400;
+
+  color: $color-nero;
+  transition: color $trans-300;
+
+  vertical-align: baseline;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: $color-safety-orange;
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: $color-nero;
+  }
+
+  .active {
+    color: $color-safety-orange;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
 </style>

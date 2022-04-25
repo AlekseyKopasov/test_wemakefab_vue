@@ -7,7 +7,7 @@
 
 <script>
 
-import Filters from '@/components/Filters';
+import Filters from '@/components/Filters.vue';
 
 export default {
   name: 'CatalogView',

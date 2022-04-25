@@ -1,19 +1,27 @@
 <template>
-  <b-container id="app">
-    <Header />
-
-    <router-view/>
-
+  <div id="app">
+    <b-container>
+      <Header />
+      <router-view/>
+    </b-container>
     <Footer/>
-  </b-container>
+  </div>
 </template>
 
 <script>
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
-  components: { Header, Footer }
-}
+  components: { Header, Footer },
+};
 </script>
+
+<style lang="scss" scoped>
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+</style>

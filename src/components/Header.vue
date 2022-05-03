@@ -1,17 +1,17 @@
 <template>
   <header class="header">
     <b-row>
-      <b-col>
+      <b-col cols="2">
         <router-link to="/">
           <Logo />
         </router-link>
       </b-col>
-      <b-col>
+      <b-col cols="2">
         <router-link class="link active" to="/" >Catalog</router-link>
       </b-col>
       <b-col
         class="d-flex justify-content-end"
-        cols="4">
+        cols="8">
         <router-link class="link" to="/profile">Profile</router-link>
         <b-button
           class="link"

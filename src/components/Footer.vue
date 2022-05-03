@@ -4,7 +4,7 @@
       <b-row>
         <b-col>
           <router-link to="/">
-            <Logo :mod="white" />
+            <Logo :mod="mod" />
           </router-link>
         </b-col>
         <b-col
@@ -23,6 +23,9 @@ import Logo from '@/components/Logo.vue';
 
 export default {
   components: { Logo },
+  data: () => ({
+    mod: 'white',
+  }),
 };
 </script>
 

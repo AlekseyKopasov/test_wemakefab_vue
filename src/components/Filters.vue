@@ -1,16 +1,27 @@
 <template>
-  <b-row class="filters">
-    <b-col>1 of 3</b-col>
-    <b-col>2 of 3</b-col>
-    <b-col>3 of 3</b-col>
-    <b-col>4 of 4</b-col>
-  </b-row>
+  <div>
+    <b-form inline>
+      <label class="mr-sm-2" for="input-group-1">Name</label>
+      <b-form-select v-model="selected" :options="options"></b-form-select>
+
+      <b-button type="submit" variant="primary">Submit</b-button>
+    </b-form>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      selected: null,
+      options: [
+        { value: null, text: 'Please select an option' },
+        { value: 'a', text: 'This is First option' },
+        { value: 'b', text: 'Selected Option' },
+        { value: { C: '3PO' }, text: 'This is an option with object value' },
+        { value: 'd', text: 'This one is disabled', disabled: true }
+      ]
+    }
+  }
+}
 </script>
-
-<style scoped>
-
-</style>

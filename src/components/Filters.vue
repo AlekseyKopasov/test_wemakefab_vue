@@ -2,28 +2,32 @@
   <div>
     <b-form class="filters-form" inline>
       <b-form-row>
-        <InputField :aria-label="'Search input'" />
+        <InputField
+          :title="'Search'"
+          :inputType="'search'"
+          :placeholder="'To start searching'"
+          :aria-label="'Search input'" />
 
-        <b-input-group class="d-flex flex-column align-items-start col">
-          <span class="filters-form__label">Product category</span>
-          <b-dropdown class="filters-form__input" id="dropdown-1" text="Sneakers">
-            <b-dropdown-item>Sneakers</b-dropdown-item>
-            <b-dropdown-item>Second Action</b-dropdown-item>
-            <b-dropdown-item>Third Action</b-dropdown-item>
-            <b-dropdown-divider></b-dropdown-divider>
-            <b-dropdown-item active>Active action</b-dropdown-item>
-            <b-dropdown-item disabled>Disabled action</b-dropdown-item>
-          </b-dropdown>
-        </b-input-group>
+<!--        <b-input-group class="d-flex flex-column align-items-start col">-->
+<!--          <span class="filters-form__label">Product category</span>-->
+<!--          <b-dropdown class="filters-form__input" id="dropdown-1" text="Sneakers">-->
+<!--            <b-dropdown-item>Sneakers</b-dropdown-item>-->
+<!--            <b-dropdown-item>Second Action</b-dropdown-item>-->
+<!--            <b-dropdown-item>Third Action</b-dropdown-item>-->
+<!--            <b-dropdown-divider></b-dropdown-divider>-->
+<!--            <b-dropdown-item active>Active action</b-dropdown-item>-->
+<!--            <b-dropdown-item disabled>Disabled action</b-dropdown-item>-->
+<!--          </b-dropdown>-->
+<!--        </b-input-group>-->
 
-        <b-input-group class="d-flex flex-column align-items-start col">
-          <label class="filters-form__label">Sale</label>
-          <b-form-select v-model="selected" :options="options"></b-form-select>
-        </b-input-group>
+<!--        <b-input-group class="d-flex flex-column align-items-start col">-->
+<!--          <label class="filters-form__label">Sale</label>-->
+<!--          <b-form-select v-model="selected" :options="options"></b-form-select>-->
+<!--        </b-input-group>-->
 
-        <b-input-group class="d-flex flex-column align-items-start col">
-          <b-button class="col" type="submit" variant="primary">Apply</b-button>
-        </b-input-group>
+<!--        <b-input-group class="d-flex flex-column align-items-start col">-->
+<!--          <b-button class="col" type="submit" variant="primary">Apply</b-button>-->
+<!--        </b-input-group>-->
     </b-form-row>
     </b-form>
   </div>

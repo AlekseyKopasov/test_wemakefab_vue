@@ -2,7 +2,7 @@
   <div>
     <b-form class="filters-form" inline>
       <b-form-row>
-        <InputField :aria-label="Search-input" />
+        <InputField :aria-label="'Search input'" />
 
         <b-input-group class="d-flex flex-column align-items-start col">
           <span class="filters-form__label">Product category</span>

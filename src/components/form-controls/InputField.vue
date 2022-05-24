@@ -1,7 +1,13 @@
 <template>
   <b-input-group class="input-field">
-    <h3 class="input-field__label">Search</h3>
-    <b-form-input class="input-field__input" :aria-label="ariaLabel"></b-form-input>
+    <h3 class="input-field__label">{{ title }}</h3>
+    <b-form-input
+      class="input-field__input"
+      :type="inputType"
+      :placeholder="placeholder"
+      :aria-label="ariaLabel">
+    </b-form-input>
+    <span>Icon</span>
   </b-input-group>
 </template>
 
@@ -9,6 +15,15 @@
 export default {
   name: 'InputField',
   props: {
+    title: {
+      type: String,
+    },
+    inputType: {
+      type: String,
+    },
+    placeholder: {
+      type: String,
+    },
     ariaLabel: {
       type: String,
     },

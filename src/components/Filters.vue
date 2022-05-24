@@ -2,18 +2,22 @@
   <div>
     <b-form class="filters-form" inline>
       <b-form-row>
+        <InputField :aria-label="Search-input" />
+
         <b-input-group class="d-flex flex-column align-items-start col">
-          <label>Search</label>
-          <b-form-input aria-label="input-search"></b-form-input>
+          <span class="filters-form__label">Product category</span>
+          <b-dropdown class="filters-form__input" id="dropdown-1" text="Sneakers">
+            <b-dropdown-item>Sneakers</b-dropdown-item>
+            <b-dropdown-item>Second Action</b-dropdown-item>
+            <b-dropdown-item>Third Action</b-dropdown-item>
+            <b-dropdown-divider></b-dropdown-divider>
+            <b-dropdown-item active>Active action</b-dropdown-item>
+            <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+          </b-dropdown>
         </b-input-group>
 
         <b-input-group class="d-flex flex-column align-items-start col">
-          <label>Product category</label>
-          <b-form-select v-model="selected" :options="options"></b-form-select>
-        </b-input-group>
-
-        <b-input-group class="d-flex flex-column align-items-start col">
-          <label>Sale</label>
+          <label class="filters-form__label">Sale</label>
           <b-form-select v-model="selected" :options="options"></b-form-select>
         </b-input-group>
 
@@ -26,6 +30,8 @@
 </template>
 
 <script>
+import InputField from '@/components/form-controls/InputField';
+
 export default {
   data() {
     return {
@@ -39,18 +45,12 @@ export default {
       ],
     };
   },
+  components: { InputField },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/styles/style.scss";
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: '';
-}
 
 .filters-form {
   .form-row {
@@ -58,7 +58,8 @@ select {
   }
 
   .input-group,
-  .custom-select {
+  &__input,
+  .dropdown-toggle {
     font-family: inherit;
     font-size: 18px;
     line-height: 22px;
@@ -67,11 +68,11 @@ select {
     text-align: left;
   }
 
-  label {
+  &__label {
     padding-bottom: 20px;
   }
 
-  .custom-select,
+  &__input > .btn,
   .form-control {
     width: 100%;
     height: auto;

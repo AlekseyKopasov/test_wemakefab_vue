@@ -6,7 +6,10 @@
           :title="'Search'"
           :inputType="'search'"
           :placeholder="'To start searching'"
-          :aria-label="'Search input'" />
+          :aria-label="'Search input'"
+          :icon="icon.search">
+          {{ IconSearch }}
+        </InputField>
 
 <!--        <b-input-group class="d-flex flex-column align-items-start col">-->
 <!--          <span class="filters-form__label">Product category</span>-->
@@ -34,21 +37,16 @@
 </template>
 
 <script>
-import InputField from '@/components/form-controls/InputField';
+import InputField from '@/components/form-controls/InputField.vue';
+
+import IconSearch from '@/assets/images/icons/icon-cross.svg';
 
 export default {
-  data() {
-    return {
-      selected: null,
-      options: [
-        { value: null, text: 'Please select an option' },
-        { value: 'a', text: 'This is First option' },
-        { value: 'b', text: 'Selected Option' },
-        { value: { C: '3PO' }, text: 'This is an option with object value' },
-        { value: 'd', text: 'This one is disabled', disabled: true },
-      ],
-    };
-  },
+  data: () => ({
+    icon: {
+      search: IconSearch,
+    },
+  }),
   components: { InputField },
 };
 </script>

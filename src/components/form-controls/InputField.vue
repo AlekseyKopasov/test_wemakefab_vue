@@ -7,27 +7,22 @@
       :placeholder="placeholder"
       :aria-label="ariaLabel">
     </b-form-input>
-    <span>Icon</span>
+<!--    <span v-if="icon" class="input-field__icon">-->
+      <slot>{{ icon }}</slot>
+<!--    </span>-->
   </b-input-group>
 </template>
 
 <script>
 export default {
   name: 'InputField',
-  props: {
-    title: {
-      type: String,
-    },
-    inputType: {
-      type: String,
-    },
-    placeholder: {
-      type: String,
-    },
-    ariaLabel: {
-      type: String,
-    },
-  },
+  props: [
+    'title',
+    'inputType',
+    'placeholder',
+    'ariaLabel',
+    'icon',
+  ],
 };
 </script>
 

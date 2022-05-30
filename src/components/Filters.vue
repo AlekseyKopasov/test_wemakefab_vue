@@ -2,14 +2,11 @@
   <div>
     <b-form class="filters-form" inline>
       <b-form-row>
-        <InputField
+        <InputSearch
           :title="'Search'"
-          :inputType="'search'"
-          :placeholder="'To start searching'"
+          :placeholder="'To start searching...'"
           :aria-label="'Search input'"
-          :icon="icon.search">
-          {{ IconSearch }}
-        </InputField>
+          />
 
 <!--        <b-input-group class="d-flex flex-column align-items-start col">-->
 <!--          <span class="filters-form__label">Product category</span>-->
@@ -37,17 +34,11 @@
 </template>
 
 <script>
-import InputField from '@/components/form-controls/InputField.vue';
-
-import IconSearch from '@/assets/images/icons/icon-cross.svg';
+import InputSearch from '@/components/form-controls/InputSearch.vue';
 
 export default {
-  data: () => ({
-    icon: {
-      search: IconSearch,
-    },
-  }),
-  components: { InputField },
+  data: () => ({}),
+  components: { InputSearch },
 };
 </script>
 

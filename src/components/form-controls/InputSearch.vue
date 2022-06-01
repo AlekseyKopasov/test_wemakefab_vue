@@ -60,14 +60,27 @@ export default {
   }
 
   &__label {
-
+    margin-bottom: 20px;
   }
 
   &__input {
     width: 100%;
+    height: auto;
+    padding: 20px 35px 20px 20px;
+    background-color: $color-white-smoke;
+    border: 1px solid transparent;
+    box-sizing: border-box;
 
     &:focus + .input-field__icon {
       opacity: 1;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $color-black;
+      box-shadow: none;
     }
   }
 
@@ -80,7 +93,7 @@ export default {
     position: absolute;
     bottom: 50%;
     right: 20px;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     width: 12px;
     height: 12px;
     z-index: 3;

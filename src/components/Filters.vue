@@ -7,7 +7,6 @@
           :placeholder="'To start searching...'"
           :aria-label="'Search input'"
           />
-
 <!--        <b-input-group class="d-flex flex-column align-items-start col">-->
 <!--          <span class="filters-form__label">Product category</span>-->
 <!--          <b-dropdown class="filters-form__input" id="dropdown-1" text="Sneakers">-->

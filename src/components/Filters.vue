@@ -7,6 +7,8 @@
           :placeholder="'To start searching...'"
           :aria-label="'Search input'"
           />
+
+        <CustomDropdown />
 <!--        <b-input-group class="d-flex flex-column align-items-start col">-->
 <!--          <span class="filters-form__label">Product category</span>-->
 <!--          <b-dropdown class="filters-form__input" id="dropdown-1" text="Sneakers">-->
@@ -34,10 +36,11 @@
 
 <script>
 import InputSearch from '@/components/form-controls/InputSearch.vue';
+import CustomDropdown from '@/components/form-controls/CustomDropdown.vue';
 
 export default {
   data: () => ({}),
-  components: { InputSearch },
+  components: { InputSearch, CustomDropdown },
 };
 </script>
 

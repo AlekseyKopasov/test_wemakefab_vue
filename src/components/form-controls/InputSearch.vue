@@ -70,6 +70,7 @@ export default {
     background-color: $color-white-smoke;
     border: 1px solid transparent;
     box-sizing: border-box;
+    cursor: pointer;
 
     &:focus + .input-field__icon {
       opacity: 1;

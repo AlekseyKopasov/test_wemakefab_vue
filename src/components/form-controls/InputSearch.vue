@@ -100,7 +100,5 @@ export default {
     z-index: 3;
     opacity: 0;
   }
-
-  &__icon svg {}
 }
 </style>
